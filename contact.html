@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | NeXa Digital Agency</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand interactive">
+        NeXa<span class="brand-dot"></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link interactive">Home</a>
+        <a href="about.html" class="nav-link interactive">About</a>
+        <a href="services.html" class="nav-link interactive">Services</a>
+        <a href="roadmap.html" class="nav-link interactive">Process</a>
+        <a href="contact.html" class="nav-link active interactive">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle interactive" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        
+        <button class="nav-toggle interactive" id="nav-toggle" aria-expanded="false" aria-label="Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="section">
+      <div class="section-header reveal">
+        <span class="eyebrow">Start a Project</span>
+        <h1 class="section-title">Go Build.</h1>
+        <p class="section-desc">You are the architect. Your code determines how the world experiences information. Open your IDE and let's begin.</p>
+      </div>
+
+      <div class="contact-layout reveal">
+        <div class="contact-info">
+          <h2>Let's create something extraordinary together.</h2>
+          <div class="contact-details">
+            <div class="contact-item interactive">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              hello@nexa.agency
+            </div>
+            <div class="contact-item interactive">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              +1 (555) 123-4567
+            </div>
+            <div class="contact-item interactive">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Global Remote Operations
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted! We will get back to you soon.');">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input class="form-input interactive" type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-input interactive" type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service">Service Required</label>
+            <select class="form-input interactive" id="service" name="service">
+              <option value="video">Video Editing</option>
+              <option value="graphic">Graphic Design</option>
+              <option value="social">Social Media</option>
+              <option value="web">Web Development</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Project Details</label>
+            <textarea class="form-textarea interactive" id="message" name="message" required placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary interactive" style="width: 100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top reveal">
+      <h2 class="footer-title">Ready to build the future?</h2>
+      <a href="contact.html" class="btn btn-primary interactive">Let's Talk</a>
+    </div>
+    <div class="footer-bottom reveal">
+      <div class="nav-brand">NeXa<span class="brand-dot"></span></div>
+      <p>&copy; 2026 NeXa Digital Agency. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" class="interactive">Twitter</a>
+        <a href="#" class="interactive">LinkedIn</a>
+        <a href="#" class="interactive">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
