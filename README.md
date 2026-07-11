@@ -14,7 +14,6 @@ The project focuses on creating a clean, responsive, and interactive user interf
 <img width="1919" height="904" alt="image" src="https://github.com/user-attachments/assets/928ee548-e327-450f-a275-3ed13518fa82" />
 
 
-**Live Demo:** `Coming Soon`
 
 ---
 
